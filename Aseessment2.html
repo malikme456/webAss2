@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+	border: 2px solid black;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 15px;
+}
+
+th{
+  background-color: grey;
+}
+body{
+background-color: lightblue;
+
+padding-left:20%
+}
+</style>
+</head>
+<body>
+	<h1> Portal - Rent a Car </h1>
+	
+	<table>
+		<tr>
+		<th>Estate</th>
+		<th>5-6 Passengers</th>
+		<th>8 Passengers</th>
+		<th>9 Passengers</th>
+		</tr>
+		<tr>
+		<td><input type="checkbox" onclick="myFunction1()" id="box1"><input type="text" id="percentage1" maxlength='100' size="5"> %<br><br></td>
+		<td><input type="checkbox" onclick="myFunction2()" id="box2"><input type="text" id="percentage2"	size="5"> %<br><br></td>
+		<td><input type="checkbox" onclick="myFunction3()" id="box3"><input type="text" id="percentage3"  size="5"> %<br><br></td>
+		<td><input type="checkbox" onclick="myFunction4()" id="box4"><input type="text" id="percentage4" size="5"> %<br><br></td>
+		</tr>
+		<tr>
+		<td><input type="checkbox" onclick="myFunction6()" id="box6"><input type="text" id="pound1" name="" size="5" > £<br><br></td>
+		<td><input type="checkbox" onclick="myFunction7()" id="box7"><input type="text" id="pound2" name="" size="5" > £<br><br></td>
+		<td><input type="checkbox" onclick="myFunction8()" id="box8"><input type="text" id="pound3" name="" size="5" > £<br><br></td>
+		<td><input type="checkbox" onclick="myFunction9()" id="box9"><input type="text" id="pound4" name="" size="5" > £<br><br></td>
+		</tr>
+	</table>
+<script>
+function myFunction1() {
+document.getElementById('box1').onchange = function() {
+    document.getElementById('pound1').disabled = this.checked;
+	x = document.getElementById("percentage1").value;
+	if (x > -1 && x < 101) {
+	} 
+	else {
+    alert("Number Should Be in between 0-100");
+	document.getElementById("percentage1").value=" ";
+	}
+};
+}
+function myFunction2() {
+document.getElementById('box2').onchange = function() {
+    document.getElementById('pound2').disabled = this.checked;
+	x = document.getElementById("percentage2").value;
+	if (x > -1 && x < 101) {
+	} 
+	else {
+    alert("Number Should Be in between 0-100");
+	document.getElementById("percentage2").value=" ";
+	}
+};
+}
+function myFunction3() {
+document.getElementById('box3').onchange = function() {
+    document.getElementById('pound3').disabled = this.checked;
+	x = document.getElementById("percentage3").value;
+	if (x > -1 && x < 101) {
+	} 
+	else {
+    alert("Number Should Be in between 0-100");
+	document.getElementById("percentage3").value=" ";
+	}
+};
+}
+function myFunction4() {
+document.getElementById('box4').onchange = function() {
+    document.getElementById('pound4').disabled = this.checked;
+	x = document.getElementById("percentage4").value;
+	if (x > -1 && x < 101) {
+	} 
+	else {
+    alert("Number Should Be in between 0-100");
+	document.getElementById("percentage4").value=" ";
+	}
+};
+}
+function myFunction5() {
+document.getElementById('box5').onchange = function() {
+    document.getElementById('pound5').disabled = this.checked;
+	x = document.getElementById("percentage5").value;
+	if (x > -1 && x < 101) {
+	} 
+	else {
+    alert("Number Should Be in between 0-100");
+	document.getElementById("percentage5").value=" ";
+	}
+};
+}
+function myFunction6() {
+document.getElementById('box6').onchange = function() {
+    document.getElementById('percentage1').disabled = this.checked;
+	x = document.getElementById("pound1").value;
+	if (x > -1) {
+	} 
+	else {
+    alert("Number Should Be Positive");
+	document.getElementById("pound1").value=" ";
+	}
+};
+}
+function myFunction7() {
+document.getElementById('box7').onchange = function() {
+    document.getElementById('percentage2').disabled = this.checked;
+	x = document.getElementById("pound2").value;
+	if (x > -1) {
+	} 
+	else {
+    alert("Number Should Be Positive");
+	document.getElementById("pound3").value=" ";
+	}
+};
+}
+function myFunction8() {
+document.getElementById('box8').onchange = function() {
+    document.getElementById('percentage3').disabled = this.checked;
+	x = document.getElementById("pound3").value;
+	if (x > -1) {
+	} 
+	else {
+    alert("Number Should Be Positive");
+	document.getElementById("pound3").value=" ";
+	}
+};
+}
+function myFunction9() {
+document.getElementById('box9').onchange = function() {
+    document.getElementById('percentage4').disabled = this.checked;
+	x = document.getElementById("pound4").value;
+	if (x > -1) {
+	} 
+	else {
+    alert("Number Should Be Positive");
+	document.getElementById("pound4").value=" ";
+	}
+};
+}
+function myFunction10() {
+document.getElementById('box10').onchange = function() {
+    document.getElementById('percentage5').disabled = this.checked;
+	x = document.getElementById("pound5").value;
+	if (x > -1) {
+	} 
+	else {
+    alert("Number Should Be Positive");
+	document.getElementById("pound5").value=" ";
+	}
+};
+}
+</script>
+
+</body>
+</html>
